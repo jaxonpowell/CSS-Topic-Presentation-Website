@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a Website that I am making to present my CSS topic about text shadows!">
+  <title>CSS Topic - Text Shadows</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    article {
+      max-width: 60em;
+      /* choose whatever width you'd like.
+                       "em" is one character */
+    }
+
+    h1 {
+      text-shadow: 8px 8px 2px #b8b8b8;
+      color: #080808;
+      font-size: 60px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article>
+      <h1>Text Shadows!</h1>
+      <p>The text-shadow CSS property adds <em>shadows</em> to text. In its simplest use, you only specify the
+        horizontal shadow and the vertical shadow. It accepts a comma-separated list of shadows to be
+        applied to the text and any of its decorations. Each shadow is described by some combination of X and Y offsets
+        from the element, blur radius, and color. Each shadow is specified as two or three length values, followed
+        optionally by a color value. The first two length values are the offset-x and
+        offset-y values. The third, optional, length value is the blur-radius. The Color
+        value is the shadow's color. When more than one shadow is given, shadows are applied front-to-back,
+        with the first-specified shadow on top.
+      </p>
+
+      <h4>Offset X & Y</h4>
+      <p>These length values specify the shadow's distance from the text. offset-x specifies the
+        horizontal distance; a negative value places the shadow to the left of the text. offset-y specifies the
+        vertical distance; a negative value places the shadow above the text. If both values are 0, the shadow is
+        placed directly behind the text, although it may be partly visible due to the effect of blur-radius.</p>
+      <!--Code Pen 1-->
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxPVqaW"
+        data-user="jaxonpowell"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/jaxonpowell/pen/xxPVqaW">
+            X &amp; Y Offset (Text Shadow Demo)</a> by jaxonpowell (<a
+            href="https://codepen.io/jaxonpowell">@jaxonpowell</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+      <h4>Color</h4>
+      <p>The color of the shadow. It can be specified either before or after the offset values. If unspecified, the
+        color's value is left up to the user agent, so when consistency across browsers is desired you should define it
+        explicitly.</p>
+      <!--Code pen 2-->
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZEaWeNJ"
+        data-user="jaxonpowell"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/jaxonpowell/pen/ZEaWeNJ">
+            Adding Color</a> by jaxonpowell (<a href="https://codepen.io/jaxonpowell">@jaxonpowell</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+      <h4>Blur Radius</h4>
+      <p>This is a length value. The higher the value, the bigger the blur; the shadow becomes wider and lighter. If
+        not specified, it defaults to 0.></p>
+      <!--Code Pen 4-->
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwjaVbz"
+        data-user="jaxonpowell"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/jaxonpowell/pen/RwjaVbz">
+            Blur Radius (Text Shadow Demo)</a> by jaxonpowell (<a
+            href="https://codepen.io/jaxonpowell">@jaxonpowell</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+      <h4>Multiple Shadows</h4>
+      <p>When adding multiple shadows you need to separate them by commas. Depending on how many different shadows are
+        stacked on top of each other, it can lead to making it look three dimensional.</p>
+      <!--Code Pen 5-->
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYPqwGj"
+        data-user="jaxonpowell"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/jaxonpowell/pen/zYPqwGj">
+            Multiple Shadows (Text Shadow Demo)</a> by jaxonpowell (<a
+            href="https://codepen.io/jaxonpowell">@jaxonpowell</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+  </main>
+</body>
+
+</html>
